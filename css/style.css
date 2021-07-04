@@ -1,0 +1,340 @@
+/* ...................... global ...................... */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.fullcontainer{
+    width: 100%;
+}
+.content{
+    display: flex;
+    font-family: "";
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none; 
+}
+.btn{
+    border: 1px solid white;
+    padding: 6px;
+    font-weight: bolder;
+    width: 150px;
+    border-radius:17px 17px 17px 2px ;
+}
+.btn-primary{
+    background-color: transparent;
+    color: white;
+}
+body {
+    font-family: 'Cabin', sans-serif;  }
+  /* @font-face {
+    font-family: 'MyWebFont';
+    src: url('../Fonts/Cabin-Bold.ttf'); 
+    src: url('../Fonts/Cabin-BoldItalic.ttf'), 
+         url('../Fonts/Cabin-Italic.ttf'), 
+         url('../Fonts/Cabin-Medium.ttf'), 
+         url('../Fonts/Cabin-MediumItalic.ttf') , 
+         url('../Fonts/Cabin-Regular.ttf'), 
+         url('../Fonts/Cabin-SemiBold.ttf'),
+         url('../Fonts/Cabin-SemiBoldItalic.ttf')
+  } */
+  .w-40{ width: 40%;  }
+  .w-50{ width: 50%;}
+  .w-60{ width: 60%;  }
+
+  .border{
+      border:1px solid black
+  }
+  h1{
+      color: white;
+      font-size: 90px;
+  }
+  h3{
+    font-size: 35px;
+  }
+  h3,h4,h6{
+    color: #9148DC;
+  }
+
+  section{
+      padding-top: 60px;
+  }
+  
+/*...................... /global ......................*/
+
+/* ...................... nav ...................... */
+
+.navbar{
+      position: fixed;  
+      z-index: 1;
+      width: 100%;
+      background: linear-gradient(#874CDF, #6455E8);
+      /* background:transparent; */
+}
+.navbar  .navbar-content{
+    display: flex ;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+.navbar-links li{
+    display: inline-block;
+    padding:0 10px;
+    
+}
+.navbar-links li a{
+    color: white;
+}
+.navbar-links li a:hover {
+    color: black;
+}
+.navbar-content .btn a{
+    color:white;
+}
+.navbar-content .btn a:hover{     color:black;}
+
+
+
+
+
+/*...................... header ......................*/
+
+.header{
+    background-image: url('../Assets/bg-img/welcome-bg.png');
+    background-size:cover ;
+    position: relative;
+    /* background-position: bottom; */
+    height: 100vh;
+}
+.header .container{
+    align-items: center;
+    height: 100%;
+}
+.navbar-logo img{
+    /* background-color: #5F56E9; */
+}
+.header-img {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: -130px;
+}
+.header .inpt {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 17px;
+}
+.header-btn{
+    padding: 10px;
+    background-color: tomato;
+}
+.header-btn:hover{
+    background-color: white;
+    color: tomato;
+}
+.header-content p{
+    color: white;
+}
+.header-heading{
+    padding-bottom: 70px;
+}
+/*...................... /header ......................*/
+
+/*...................... special ......................*/
+
+.special-header{
+    text-align: center;
+}
+h3::after{
+    content: "";
+    border-bottom: 3px solid tomato;
+    width: 61px;
+    display: block;
+    margin: 25px auto;
+}
+.special-content div{
+}
+.special-content{
+    justify-content: space-around;
+}
+.special-card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 4px 1px rgba(236, 234, 234, 0.91);
+}
+.special-card p{
+text-align: center;
+}
+.special-card i{
+    color: tomato;
+}
+.special-card h4{
+    padding: 12px 0;
+}
+.special-card h4{
+    color: black;
+}
+
+/*...................... /special ......................*/
+
+/*...................... Propositions ......................*/
+
+.Propositions{
+    /* flex-direction: row; */
+}
+ .Propositions-content h3::after{
+display: none}
+
+.Propositions-img img{
+    width: 80%;
+}
+.Propositions-content{
+    padding-left: 40px;
+}
+.Propositions-content p{
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.Propositions-content .btn ,.Propositions-content i{
+color: black;}
+.Propositions-content  .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: 0px 0px 4px 1px rgba(236, 234, 234, 0.91);
+
+}
+.Propositions-content  i{margin-right: 5px;}
+
+/*....................../Propositions ......................*/
+
+/*......................Awesome ......................*/
+
+.Awesome-header{
+    text-align: center;
+}
+.Awesome-content{
+   flex-direction: row;  
+   justify-content: space-around;
+}
+/* .Awesome-card{
+} */
+.Awesome-card{
+    width: 30%;
+    flex-direction: column;
+}
+.Awesome-card-header{
+    padding: 20px 0;
+}
+.Awesome-card-header i {
+    padding-right: 10px;
+    color: tomato;
+}
+.Awesome-card-header h4{
+    color: black;
+}
+.Awesome-img img{  
+    padding-top: 50px;
+    height: 70%;
+}
+
+.Awesome-values {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+    background: linear-gradient(#874CDF, #6455E8);
+    color: white;
+    font-size: 15px;
+    margin-top: -70px;
+}
+.Awesome-values h4{
+    color: white;
+    font-size: 35px;
+    padding-right: 5px;
+}
+.Awesome-values-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 90px;
+}
+/*....................../Awesome ......................*/
+
+/*......................Screenshots ......................*/
+
+.Screenshots-header{
+    text-align: center;
+}
+
+.Screenshots-slider{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Screenshots-slider img{
+    width: 15%;
+}
+.Screenshots-bullets{
+    padding-top: 50px;
+    justify-content: space-around;
+    color: thistle;
+}
+.Screenshots-bullets i:hover{
+    color: tomato;
+}
+/*....................../Screenshots ......................*/
+
+
+@media(max-width: 768px){
+    .container{width:100%;}
+    .content{flex-wrap: wrap;}
+    h1{ font-size: 40px;}
+    h3{ font-size: 16px; }
+    p{  font-size: 12px;}
+    .navbar{width:100%;
+    }
+    .header-btn{padding: 0; }
+    .navbar-links li a{display: none;}
+    .header-img { bottom: -20px;}
+    body{font-size: 12px;}
+    .btn {
+        padding: 11px;
+        font-weight: normal;
+        width: 140px;
+        font-size: 12px;
+    }
+    .special-card {width: 100%;}
+    .Propositions-content p{line-height: 14px;}
+    .Propositions div {width: 100%;}
+    .Propositions-img img {
+        width: 70%;
+        padding-left: 25%;}
+    .Propositions-content {
+            text-align: center;
+    }
+    .Propositions-content .mobilscreen{
+        justify-content: center;
+    }
+    h3::after{width: 30px;}
+    .Awesome-card{width: 100%}
+    .Awesome-values-card  {
+        width: 50%;
+        justify-content: center;
+    }
+
+}
